@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #5cdb95;
+}
+/* header  */
+
+header{
+    font-size:1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5% 2rem 5%;
+    top:0;
+    left:0;
+    right:0;
+    /* box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1); */
+    background-color:#5cdb95;
+    margin-bottom: 2rem;
+}
+
+header .logo{
+    color:#05386b;
+    font-size:2.5rem;
+    font-weight: bolder;
+}
+
+/* Employee Details  */
+
+        .UserCard h1{
+            font-size: 2.5rem;
+            color: #05386b;
+        }
+
+        .UserCard button{
+            font-size: 1.7rem;
+            padding: 1rem 5rem;
+            border-radius: .5rem;
+            border: .2rem solid rgba(0, 0, 0, .3);
+            margin:2rem 0;
+        }
+
+        .UserCard button:hover{
+            background-color: #f32d51;
+            color:white;
+            cursor: pointer;
+        }
+
+        .card-container .card{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 2rem 10%;
+            grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+            box-shadow: black 10px;
+            gap:5rem;
+            
+        }
+
+        .card-container .card:hover{
+            transform: scale(1) !important;
+            cursor: pointer;
+        }
+
+        .card-container .card .user-profile{
+            text-align: left;
+            font-size: 1.7rem;
+            background-color: white;
+            
+            padding: 4rem;
+            border-radius: 1rem;
+        }
+
+
+        .card-container .card .user-profile .image{
+            text-align: center;
+            
+        }
+
+        .card-container .card .user-profile .image img{
+            border-radius: 50%;
+            
+        }
+
+        .card-container .card .user-profile p{
+            margin-top: 1rem;
+        }
+
+
+        @media(max-width:991px){
+
+            html{
+                font-size: 55%;
+            }
+
+        }
+
+        @media(max-width:660px){
+            html{
+                font-size: 50%;
+            }
+        }
